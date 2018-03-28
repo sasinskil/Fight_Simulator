@@ -1,9 +1,9 @@
-package arena;
+package battlefield;
 
 import java.util.Random;
 
 
-public class Arena
+public class Battlefield
 {
 
     public static void main(String[] args) throws InterruptedException

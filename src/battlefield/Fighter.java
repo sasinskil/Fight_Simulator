@@ -1,4 +1,4 @@
-package arena;
+package battlefield;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -24,23 +24,23 @@ public class Fighter
     
     }
 
-    public Fighter(String imie, int sila, int zrecznosc, int zycie)
+    public Fighter(String name, int strength, int dexterity, int health)
     {
         this();
-        this.name = imie;
-        this.strength = sila;
-        this.dexterity = zrecznosc; 
-        this.health = zycie;
+        this.name = name;
+        this.strength = strength;
+        this.dexterity = dexterity; 
+        this.health = health;
     }
     
-    public Fighter(String imie, int sila, int zrecznosc, int zycie, int potki)
+    public Fighter(String name, int strength, int dexterity, int health, int potions)
     {
         
-        this.name = imie;
-        this.strength = sila;
-        this.dexterity = zrecznosc; 
-        this.health = zycie;
-        this.potions = potki;
+        this.name = name;
+        this.strength = strength;
+        this.dexterity = dexterity; 
+        this.health = health;
+        this.potions = potions;
     }
     
     
