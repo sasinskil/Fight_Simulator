@@ -1,16 +1,11 @@
 package battlefield;
 
-import java.util.Random;
-
 
 public class Battlefield
 {
 
     public static void main(String[] args) throws InterruptedException
     {
-        Random generator= new Random();
-        int chance;
-        chance = generator.nextInt(2);
         
         Fighter[] fighters =
         {
@@ -26,13 +21,11 @@ public class Battlefield
             System.out.print(war + " " + war.havePotions() + "\n");
 
         }
+    
+       System.out.println("|||||||||||| Battlefield ||||||||||||||||");
         
-        
-        
-        System.out.println("|||||||||||| Battlefield ||||||||||||||||");
-        
-       fighters[0].strength =  fighters[0].calculateTheImpactPower();
-       fighters[1].strength = fighters[1].calculateTheImpactPower();
+       fighters[0].calculateTheImpactPower();
+       fighters[1].calculateTheImpactPower();
        
        fighters[0].fight(fighters[1]);
  

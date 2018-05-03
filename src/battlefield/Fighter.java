@@ -12,12 +12,53 @@ public class Fighter
     Random generator= new Random();
     Scanner in = new Scanner(System.in);
     
-    public String name;
-    public int strength;
-    public int dexterity;
-    public int health;
-    public int potions;
-   
+    private String name;
+    private int strength;
+    private int dexterity;
+    private int health;
+    private int potions;
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStrength() {
+        return this.strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public int getDexterity() {
+        return this.dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
+    }
+
+    public int getHealth() {
+        return this.health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getPotions() {
+        return this.potions;
+    }
+
+    public void setPotions(int potions) {
+        this.potions = potions;
+    }
+    
+
     private Fighter()
     {
       this.potions = 2;
@@ -65,6 +106,7 @@ public class Fighter
            System.out.println("Chance " + chance);
            System.out.printf("Round %d",round);
             System.out.println();
+            
             if (chance==1 || chance ==2)
             {
               System.out.printf("%s hits for %d ", f.name, f.strength);
